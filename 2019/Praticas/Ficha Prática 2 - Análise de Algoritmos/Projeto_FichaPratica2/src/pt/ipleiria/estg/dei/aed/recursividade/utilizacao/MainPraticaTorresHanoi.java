@@ -12,12 +12,12 @@ public class MainPraticaTorresHanoi {
     public MainPraticaTorresHanoi() {
         TorresHanoi torresHanoi = new TorresHanoi();
 
-        torresHanoi.getEstatistica(3);
-//        int[] numeroDiscos = {3, 0, 5, 10, 15, 30, 31, 32};
-//        for (int n : numeroDiscos) {
-//            //torresHanoi.executar(n, 'A', 'B', 'C');
-//            torresHanoi.getEstatistica(n);
-//        }
+//        torresHanoi.getEstatistica(3);
+        int[] numeroDiscos = {3, 0, 5, 10, 15, 30, 31, 32};
+        for (int n : numeroDiscos) {
+            //torresHanoi.executar(n, 'A', 'B', 'C');
+            torresHanoi.getEstatistica(n);
+        }
     }
 
     public static void main(String[] args) {
