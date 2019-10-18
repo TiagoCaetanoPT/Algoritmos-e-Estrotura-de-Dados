@@ -15,14 +15,13 @@ public class InsertionSort<T> extends AlgoritmoOrdenacao<T> {
             T aux = elementos[i]; // guardar elemento atual
             int j = i - 1;
             do {
-                if (criterio.comparar(elementos[i], elementos[j]) >= 0) { //comparar aux com elementos[j]
+                if (criterio.comparar(aux, elementos[j]) >= 0) { //comparar aux com elementos[j]
                     break;
                 }
                 elementos[j+1] = elementos[j];
                 j--;
             } while (j >= 0);
-            //colocar o elemento atual na posicao a seguir à ultima posição verificada
-            elementos[j+1] = aux;
+            elementos[j+1] = aux; //colocar o elemento atual na posicao a seguir à ultima posição verificada
         }
     }
 }
