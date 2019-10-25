@@ -23,29 +23,9 @@
     <Bounds>
       <AutoSize>false</AutoSize>
       <X>30</X>
-      <Y>50</Y>
-      <W>414</W>
-      <H>130</H>
-    </Bounds>
-    <PanelSize>
-      <Key>jgrasp_viewers._X_ElementView0</Key>
-      <Order>4</Order>
-      <W>420</W>
-      <H>168</H>
-    </PanelSize>
-    <Viewer>
-      <ScopeID>0</ScopeID>
-      <Expression>`local pt.ipleiria.estg.dei.aed.utils.EstatisticaDeComparacoesETrocas` estatistica</Expression>
-      <ViewerClass>jgrasp_viewers._X_ElementView</ViewerClass>
-    </Viewer>
-  </Frame>
-  <Frame>
-    <Bounds>
-      <AutoSize>false</AutoSize>
-      <X>30</X>
       <Y>200</Y>
-      <W>514</W>
-      <H>152</H>
+      <W>516</W>
+      <H>154</H>
     </Bounds>
     <PanelSize>
       <Key>jgrasp_viewers._X_A_PresentationView0</Key>
@@ -59,7 +39,9 @@
       <Indices>i#j</Indices>
       <ViewerClass>jgrasp_viewers._X_A_PresentationView</ViewerClass>
       <ViewerData>
+                
         <Round>false</Round>
+              
       </ViewerData>
     </Viewer>
   </Frame>
@@ -68,8 +50,8 @@
       <AutoSize>false</AutoSize>
       <X>500</X>
       <Y>110</Y>
-      <W>114</W>
-      <H>42</H>
+      <W>126</W>
+      <H>44</H>
     </Bounds>
     <PanelSize>
       <Key>jgrasp_viewers._X_ElementView0</Key>
@@ -80,6 +62,26 @@
     <Viewer>
       <ScopeID>1</ScopeID>
       <Expression>`local java.lang.Object` aux</Expression>
+      <ViewerClass>jgrasp_viewers._X_ElementView</ViewerClass>
+    </Viewer>
+  </Frame>
+  <Frame>
+    <Bounds>
+      <AutoSize>false</AutoSize>
+      <X>30</X>
+      <Y>50</Y>
+      <W>416</W>
+      <H>132</H>
+    </Bounds>
+    <PanelSize>
+      <Key>jgrasp_viewers._X_ElementView0</Key>
+      <Order>4</Order>
+      <W>420</W>
+      <H>168</H>
+    </PanelSize>
+    <Viewer>
+      <ScopeID>0</ScopeID>
+      <Expression>`local pt.ipleiria.estg.dei.aed.utils.EstatisticaDeComparacoesETrocas` estatistica</Expression>
       <ViewerClass>jgrasp_viewers._X_ElementView</ViewerClass>
     </Viewer>
   </Frame>
