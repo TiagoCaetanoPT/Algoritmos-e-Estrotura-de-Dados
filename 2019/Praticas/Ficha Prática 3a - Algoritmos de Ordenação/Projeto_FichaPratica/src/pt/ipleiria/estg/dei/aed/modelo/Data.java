@@ -1,5 +1,7 @@
 package pt.ipleiria.estg.dei.aed.modelo;
 
+import java.util.InvalidPropertiesFormatException;
+
 public class Data {
     private int dia;
     private int mes;
@@ -9,6 +11,14 @@ public class Data {
         this.dia = dia;
         this.mes = mes;
         this.ano = ano;
+    }
+
+    public static Data parseData(String data) throws InvalidPropertiesFormatException { // throws -> significa este metodo permite lançar excepções
+        String[] partes = data.split("/");
+        if (partes.length != 3) {
+            throw new InvalidPropertiesFormatException("Formato da data é inválido");
+        }
+        return new Data(Integer.valueOf(partes[0]), Integer.valueOf(partes[1]), Integer.valueOf(partes[2]));
     }
 
     public int getDia() {
