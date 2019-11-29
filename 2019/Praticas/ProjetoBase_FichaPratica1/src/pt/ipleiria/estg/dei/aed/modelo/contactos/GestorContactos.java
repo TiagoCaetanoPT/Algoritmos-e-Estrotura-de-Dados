@@ -14,6 +14,20 @@ public enum GestorContactos {
     }
 
     public void inserir(Contacto contacto) {
+        Data dataNascimento = contacto.getDataNascimento();
+
+        GestorContactosDataNascimento contactosDataNascimento = new GestorContactosDataNascimento(dataNascimento);
+
+        //procurar na lista contactosPorDataNascimento o gestor com esta data
+        GestorContactosDataNascimento contactosNaDataNascimento = contactosPorDataNascimento.consultarDistinto(contactosDataNascimento);
+
+        if(contactosNaDataNascimento == null){
+            contactosNaDataNascimento = contactosDataNascimento;
+            contactosPorDataNascimento.inserir(contactosNaDataNascimento);
+        }
+
+        //inserir contacto no gestor daquela data
+        contactosNaDataNascimento.inserir(contacto);
     }
 
 }
