@@ -201,7 +201,7 @@ public class ListaDuplaNaoOrdenada<T> implements ColecaoIteravelLinearNaoOrdenad
 
     @Override
     public IteradorIteravelDuplo<T> iterador() {
-        return new Interador();
+        return new Iterador();
     }
 
     @Override

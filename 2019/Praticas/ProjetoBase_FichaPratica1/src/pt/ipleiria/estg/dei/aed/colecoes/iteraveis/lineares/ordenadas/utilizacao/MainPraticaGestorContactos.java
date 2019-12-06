@@ -22,7 +22,7 @@ public class MainPraticaGestorContactos {
         for (Contacto contacto : contactosOriginais) {
             GestorContactos.INSTANCIA.inserir(contacto);
         }
-/*
+
         Data data1 = new Data(18, 3, 1994);
         System.out.println("Contactos da data: " + data1);
         for (Contacto contacto : GestorContactos.INSTANCIA.consultar(data1)) {
@@ -69,7 +69,7 @@ public class MainPraticaGestorContactos {
         System.out.println("Contactos da data: " + contactoARemover.getDataNascimento() + " após remoção do " + contactoARemover);
         for (Contacto contacto : GestorContactos.INSTANCIA.consultar(contactoARemover.getDataNascimento())) {
             System.out.println(contacto);
-        } */
+        }
     }
 
     public static void main(String[] args) {

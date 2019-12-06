@@ -2,6 +2,7 @@ package pt.ipleiria.estg.dei.aed.modelo;
 
 import java.sql.Struct;
 import java.util.InvalidPropertiesFormatException;
+import java.util.Objects;
 
 public class Data {
 
@@ -54,4 +55,24 @@ public class Data {
 
         return Integer.compare(this.dia, data.dia);
     }
+
+    @Override
+    public boolean equals(Object o){
+        if (this == o){
+            return true;
+        }
+        if (!(o instanceof Data)){
+            return false;
+        }
+        Data data = (Data) o;
+        return dia == data.dia &&
+                mes == data.mes &&
+                ano == data.ano;
+    }
+
+    @Override
+    public int hashCode(){
+        return Objects.hash(dia, mes, ano);
+    }
+
 }
